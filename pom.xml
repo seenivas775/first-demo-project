@@ -7,7 +7,8 @@
   <groupId>com.democompany</groupId>
   <artifactId>first-demo-project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
+  <packaging>war</packaging>
+  
   <name>first-demo-project</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -36,32 +37,7 @@
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
         </plugin>
-        <phases>
-  <process-resources>
-    org.apache.maven.plugins:maven-resources-plugin:2.6:resources
-  </process-resources>
-  <compile>
-    org.apache.maven.plugins:maven-compiler-plugin:3.1:compile
-  </compile>
-  <process-test-resources>
-    org.apache.maven.plugins:maven-resources-plugin:2.6:testResources
-  </process-test-resources>
-  <test-compile>
-    org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile
-  </test-compile>
-  <test>
-    org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test
-  </test>
-  <package>
-    org.apache.maven.plugins:maven-war-plugin:2.2:war
-  </package>
-  <install>
-    org.apache.maven.plugins:maven-install-plugin:2.4:install
-  </install>
-  <deploy>
-    org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy
-  </deploy>
-</phases>
+        
         <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
